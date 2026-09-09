@@ -1,0 +1,269 @@
+/* =================================
+   COURSES PAGE
+================================= */
+
+.page-hero {
+    padding: 90px 24px 70px;
+    text-align: center;
+
+    background: linear-gradient(135deg,
+            #f8fafc 0%,
+            #ffffff 55%,
+            #f0fdf4 100%);
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.page-hero .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+    padding: 8px 14px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    color: #166534;
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+    border-radius: 999px;
+}
+
+.page-hero h1 {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+
+    color: #111827;
+}
+
+.page-hero p {
+    max-width: 680px;
+
+    margin: 20px auto 0;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #6b7280;
+}
+
+
+/* =================================
+   MAIN SECTION
+================================= */
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+
+/* =================================
+   SECTION HEADER
+================================= */
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+}
+
+.section-head .eyebrow {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    color: #15803d;
+}
+
+.section-head h2 {
+    margin: 0 0 10px;
+
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+
+    color: #111827;
+}
+
+.section-head p {
+    max-width: 600px;
+
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #6b7280;
+}
+
+
+/* =================================
+   COURSE GRID
+================================= */
+
+.course-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+}
+
+
+/* =================================
+   COURSE CARD
+   Works with CourseCard.tsx
+================================= */
+
+.course-grid>* {
+    min-width: 0;
+}
+
+
+/* =================================
+   DARK MODE
+================================= */
+
+.dark .page-hero {
+    background: linear-gradient(135deg,
+            #111827 0%,
+            #0f172a 55%,
+            #052e16 100%);
+
+    border-bottom-color: #1f2937;
+}
+
+.dark .page-hero h1 {
+    color: #f9fafb;
+}
+
+.dark .page-hero p {
+    color: #9ca3af;
+}
+
+.dark .page-hero .eyebrow {
+    color: #86efac;
+
+    background: rgba(22, 101, 52, 0.15);
+
+    border-color: rgba(74, 222, 128, 0.25);
+}
+
+.dark .section-head h2 {
+    color: #f9fafb;
+}
+
+.dark .section-head p {
+    color: #9ca3af;
+}
+
+.dark .section-head .eyebrow {
+    color: #4ade80;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 950px) {
+    .page-hero {
+        padding: 75px 20px 60px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 620px) {
+    .page-hero {
+        padding: 60px 18px 50px;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 50px 18px;
+    }
+
+    .section-head {
+        display: block;
+
+        margin-bottom: 30px;
+    }
+
+    .section-head h2 {
+        font-size: 30px;
+    }
+
+    .section-head p {
+        font-size: 14px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 400px) {
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    .page-hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

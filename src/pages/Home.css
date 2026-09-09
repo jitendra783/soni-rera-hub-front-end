@@ -1,0 +1,1059 @@
+/* =========================================
+   HOME
+========================================= */
+
+.home {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.home-hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 85% 20%,
+            rgba(212, 154, 37, 0.15),
+            transparent 32%),
+        linear-gradient(135deg,
+            #f8fafc 0%,
+            #ffffff 55%,
+            #f3f8f4 100%);
+}
+
+.home-hero-inner {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+
+    gap: 70px;
+}
+
+.home-hero-content {
+    max-width: 680px;
+}
+
+.home-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+    color: #166534;
+}
+
+.home-hero h1 {
+    margin: 0 0 22px;
+
+    font-family: Manrope, sans-serif;
+    font-size: clamp(42px, 5vw, 66px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+
+    color: #14231a;
+}
+
+.home-hero h1 .highlight {
+    color: #d49a25;
+}
+
+.home-hero-description {
+    max-width: 620px;
+
+    margin: 0 0 30px;
+
+    font-size: 17px;
+    line-height: 1.75;
+
+    color: #5f6c7b;
+}
+
+.home-hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.home-primary-btn,
+.home-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 13px 19px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.home-primary-btn {
+    background: #166534;
+    color: #ffffff;
+}
+
+.home-primary-btn:hover {
+    background: #14532d;
+    transform: translateY(-2px);
+}
+
+.home-secondary-btn {
+    border: 1px solid #dce4df;
+    background: #ffffff;
+    color: #344054;
+}
+
+.home-secondary-btn:hover {
+    border-color: #166534;
+    color: #166534;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.home-hero-visual {
+    min-height: 420px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card {
+    width: min(390px, 100%);
+
+    position: relative;
+    z-index: 2;
+
+    padding: 34px;
+
+    border: 1px solid #e4e9ee;
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 25px 70px rgba(20, 45, 30, 0.12);
+}
+
+.hero-card-logo {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 22px;
+
+    object-fit: contain;
+}
+
+.hero-card h3 {
+    margin: 0 0 10px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 25px;
+
+    color: #17261c;
+}
+
+.hero-card p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #687587;
+}
+
+.hero-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 22px;
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    background: #f0f7f2;
+
+    color: #166534;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.hero-decoration {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.hero-decoration.one {
+    width: 190px;
+    height: 190px;
+
+    top: 15px;
+    right: 0;
+
+    background: rgba(212, 154, 37, 0.11);
+}
+
+.hero-decoration.two {
+    width: 130px;
+    height: 130px;
+
+    bottom: 10px;
+    left: 0;
+
+    background: rgba(22, 101, 52, 0.08);
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+.home-stats {
+    width: min(1080px, 92%);
+
+    margin: -45px auto 0;
+
+    position: relative;
+    z-index: 5;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border: 1px solid #e4e9ee;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 18px 50px rgba(25, 45, 30, 0.09);
+
+    overflow: hidden;
+}
+
+.home-stat {
+    padding: 25px 20px;
+
+    text-align: center;
+
+    border-right: 1px solid #edf0f3;
+}
+
+.home-stat:last-child {
+    border-right: 0;
+}
+
+.home-stat-value {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+
+    color: #166534;
+}
+
+.home-stat-label {
+    font-size: 13px;
+    color: #697586;
+}
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.home-section {
+    width: min(1180px, 92%);
+
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.home-section-head {
+    max-width: 700px;
+
+    margin-bottom: 42px;
+}
+
+.home-section-head.center {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.home-section-eyebrow {
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #d49a25;
+}
+
+.home-section h2 {
+    margin: 0 0 14px;
+
+    font-family: Manrope, sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: #17261c;
+}
+
+.home-section-head p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #687587;
+}
+
+/* =========================================
+   WHY SONI RERA HUB
+========================================= */
+
+.home-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.home-feature-card {
+    padding: 28px;
+
+    border: 1px solid #e6ebef;
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.home-feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(25, 45, 30, 0.08);
+}
+
+.home-feature-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 11px;
+
+    background: #f0f7f2;
+    color: #166534;
+}
+
+.home-feature-card h3 {
+    margin: 0 0 9px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+
+    color: #1d2b22;
+}
+
+.home-feature-card p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #6c7887;
+}
+
+/* =========================================
+   COURSES
+========================================= */
+
+.home-course-section {
+    background: #f8faf9;
+}
+
+.home-course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   EXAM PREPARATION
+========================================= */
+
+.home-exam {
+    width: min(1180px, 92%);
+
+    margin: 0 auto;
+
+    padding: 70px 0;
+}
+
+.home-exam-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 45px;
+
+    border-radius: 22px;
+
+    background:
+        radial-gradient(circle at 90% 10%,
+            rgba(212, 154, 37, 0.18),
+            transparent 30%),
+        #123d25;
+}
+
+.home-exam-content {
+    max-width: 720px;
+}
+
+.home-exam h2 {
+    margin: 0 0 13px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+.home-exam p {
+    margin: 0;
+
+    line-height: 1.7;
+
+    color: #cbd9d0;
+}
+
+.home-exam-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 13px 19px;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #14532d;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease;
+}
+
+.home-exam-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   TEAM
+========================================= */
+
+.home-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 28px;
+}
+
+.home-team-card {
+    padding: 28px;
+
+    text-align: center;
+
+    border: 1px solid #e6ebef;
+    border-radius: 16px;
+
+    background: #ffffff;
+}
+
+.home-team-avatar {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #eef6f1;
+    color: #166534;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.home-team-card h3 {
+    margin: 0 0 5px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+
+    color: #17261c;
+}
+
+.home-team-card span {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #d49a25;
+}
+
+.home-team-card p {
+    margin: 12px 0 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #6b7785;
+}
+
+/* =========================================
+   BLOGS
+========================================= */
+
+.home-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.home-blog-card {
+    overflow: hidden;
+
+    border: 1px solid #e6ebef;
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.home-blog-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(25, 45, 30, 0.08);
+}
+
+.home-blog-image {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef4f0;
+
+    color: #166534;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.home-blog-content {
+    padding: 24px;
+}
+
+.home-blog-category {
+    font-size: 11px;
+    font-weight: 800;
+
+    color: #d49a25;
+
+    text-transform: uppercase;
+}
+
+.home-blog-card h3 {
+    margin: 9px 0 10px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+
+    color: #17261c;
+}
+
+.home-blog-card p {
+    margin: 0 0 16px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #697586;
+}
+
+.home-blog-card a {
+    color: #166534;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+.home-blog-card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.home-final-cta {
+    width: min(1180px, 92%);
+
+    margin: 0 auto;
+
+    padding: 0 0 90px;
+}
+
+.home-final-cta-box {
+    padding: 55px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background: #f4f7f5;
+}
+
+.home-final-cta h2 {
+    margin: 15px 0 12px;
+
+    font-family: Manrope, sans-serif;
+    font-size: 35px;
+
+    color: #17261c;
+}
+
+.home-final-cta p {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.7;
+
+    color: #697586;
+}
+
+.home-final-cta .home-hero-actions {
+    justify-content: center;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark .home-hero {
+    background:
+        radial-gradient(circle at 85% 20%,
+            rgba(212, 154, 37, 0.12),
+            transparent 32%),
+        #0b1220;
+}
+
+.dark .home-hero h1,
+.dark .hero-card h3,
+.dark .home-section h2,
+.dark .home-feature-card h3,
+.dark .home-team-card h3,
+.dark .home-blog-card h3,
+.dark .home-final-cta h2 {
+    color: #ffffff;
+}
+
+.dark .home-hero-description,
+.dark .home-section-head p,
+.dark .home-feature-card p,
+.dark .home-team-card p,
+.dark .home-blog-card p,
+.dark .home-final-cta p {
+    color: #aeb9c8;
+}
+
+.dark .hero-card,
+.dark .home-stats,
+.dark .home-feature-card,
+.dark .home-team-card,
+.dark .home-blog-card {
+    background: #111c2d;
+
+    border-color: #26364d;
+}
+
+.dark .home-secondary-btn {
+    background: #111c2d;
+
+    border-color: #31445d;
+
+    color: #e2e8f0;
+}
+
+.dark .home-stat {
+    border-color: #26364d;
+}
+
+.dark .home-stat-label {
+    color: #aeb9c8;
+}
+
+.dark .home-course-section {
+    background: #0e1726;
+}
+
+.dark .home-final-cta-box {
+    background: #111c2d;
+}
+
+.dark .home-blog-image {
+    background: #18263a;
+}
+
+.dark .home-feature-icon,
+.dark .home-team-avatar {
+    background: #182f23;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .home-hero {
+        padding: 70px 0 100px;
+    }
+
+    .home-hero-inner {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .home-hero-content {
+        max-width: 800px;
+    }
+
+    .home-hero-visual {
+        min-height: 320px;
+    }
+
+    .home-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-exam-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .home-hero {
+        min-height: auto;
+
+        padding: 55px 0 90px;
+    }
+
+    .home-hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .home-hero-description {
+        font-size: 16px;
+    }
+
+    .home-hero-actions {
+        width: 100%;
+    }
+
+    .home-primary-btn,
+    .home-secondary-btn {
+        min-height: 44px;
+    }
+
+    .home-stats {
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-top: -35px;
+    }
+
+    .home-stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .home-stat:nth-child(-n + 2) {
+        border-bottom: 1px solid #edf0f3;
+    }
+
+    .home-section {
+        padding: 65px 0;
+    }
+
+    .home-features,
+    .home-course-grid,
+    .home-team-grid,
+    .home-blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-exam {
+        padding: 0 0 65px;
+    }
+
+    .home-exam-box {
+        padding: 32px 25px;
+    }
+
+    .home-exam h2 {
+        font-size: 29px;
+    }
+
+    .home-final-cta {
+        padding-bottom: 65px;
+    }
+
+    .home-final-cta-box {
+        padding: 38px 22px;
+    }
+
+    .home-final-cta h2 {
+        font-size: 28px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .home-hero h1 {
+        font-size: 36px;
+    }
+
+    .home-stats {
+        width: 94%;
+    }
+
+    .home-stat {
+        padding: 20px 10px;
+    }
+
+    .home-stat-value {
+        font-size: 23px;
+    }
+
+    .home-exam-box {
+        padding: 28px 20px;
+    }
+
+    .hero-card {
+        padding: 27px;
+    }
+}
+
+/* =================================
+   FEATURED COURSES HEADER
+================================= */
+
+.course-section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.view-all-courses-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    flex-shrink: 0;
+
+    padding: 11px 18px;
+
+    border: 1px solid #166534;
+    border-radius: 9px;
+
+    background: #166534;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.view-all-courses-btn:hover {
+    background: #14532d;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(22, 101, 52, 0.2);
+}
+
+.view-all-courses-btn svg {
+    transition: transform 0.2s ease;
+}
+
+.view-all-courses-btn:hover svg {
+    transform: translateX(3px);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+    .course-section-head {
+        display: block;
+    }
+
+    .view-all-courses-btn {
+        margin-top: 20px;
+    }
+}
+
+.home-team-avatar {
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 4px solid #f0fdf4;
+
+    background: #dcfce7;
+
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
+}
+
+.home-team-avatar img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.dark .home-team-avatar {
+    border-color: #1f2937;
+    background: #14532d;
+}
+
+@media (max-width: 600px) {
+    .home-team-avatar {
+        width: 85px;
+        height: 85px;
+    }
+}
