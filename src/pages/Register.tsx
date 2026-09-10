@@ -6,8 +6,18 @@ export default function Register() {
     <section className="auth">
       <div className="auth-card register-card">
         <Link to="/" className="brand auth-brand">
-          <span>R</span>
-          RERA<span className="accent">HUB</span>
+           <img
+            src="/logo.png"
+            alt="Soni RERA Hub"
+            className="brand-logo"
+          />
+            <span className="brand-name">
+            SONI{" "}
+            <span className="accent">
+              RERA
+            </span>{" "}
+            HUB
+          </span>
         </Link>
 
         <h1>Create your account</h1>

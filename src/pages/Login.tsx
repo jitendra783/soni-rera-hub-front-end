@@ -7,8 +7,18 @@ export default function Login() {
       <div className="auth-card">
 
         <Link to="/" className="brand auth-brand">
-          <span>R</span>
-          RERA<span className="accent">HUB</span>
+            <img
+            src="/logo.png"
+            alt="Soni RERA Hub"
+            className="brand-logo"
+          />
+            <span className="brand-name">
+            SONI{" "}
+            <span className="accent">
+              RERA
+            </span>{" "}
+            HUB
+          </span>
         </Link>
 
         <h1>Welcome back</h1>

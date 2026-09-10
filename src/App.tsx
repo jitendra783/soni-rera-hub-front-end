@@ -14,7 +14,8 @@ import Feedback from "./pages/Feedback";
 import OurSelections from "./pages/OurSelection";
 import Achievements from "./pages/Achievements";
 import Register from "./pages/Register";
-
+import Login from "./pages/Login";
+import ForgotPassword from "./pages/ForgetPassword";
 export default function App() {
   const [dark, setDark] = useState(false);
 
@@ -34,6 +35,8 @@ export default function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/register" element={<Register />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route
           path="/our-selections"
           element={<OurSelections />}
