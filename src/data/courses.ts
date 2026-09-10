@@ -1,1 +1,46 @@
-export const courses=[{title:'RERA Agent Certification',cat:'Certification',hours:'40 Hours',price:'₹3,999',desc:'Complete foundation and practical training for RERA agents.'},{title:'RERA Consultant Masterclass',cat:'Professional',hours:'55 Hours',price:'₹5,999',desc:'Advanced compliance, documentation and client advisory.'},{title:'Real Estate Legal Essentials',cat:'Legal',hours:'32 Hours',price:'₹2,999',desc:'Understand agreements, compliance and essential legal concepts.'},{title:'RERA Exam Preparation',cat:'Exam Prep',hours:'25 Hours',price:'₹1,999',desc:'Mock tests, question bank and structured exam preparation.'},{title:'Builder Compliance Program',cat:'Builder',hours:'48 Hours',price:'₹4,999',desc:'Practical compliance framework for real-estate projects.'},{title:'Real Estate Marketing',cat:'Marketing',hours:'20 Hours',price:'₹1,499',desc:'Modern digital and field marketing strategies for professionals.'}];
+export interface Course {
+  id: number;
+  title: string;
+  category: string;
+  description: string;
+  hours: string;
+  price: string;
+  rating?: number;
+  language?: string;
+}
+
+export const courses: Course[] = [
+  {
+    id: 1,
+    title: "RERA Agent Certification",
+    category: "Certification",
+    description:
+      "Complete preparation program for RERA agent certification with practical real-estate knowledge.",
+    hours: "40 Hours",
+    price: "₹3,999",
+    rating: 4.9,
+    language: "EN / HI",
+  },
+  {
+    id: 2,
+    title: "RERA Consultant Masterclass",
+    category: "Professional",
+    description:
+      "Advanced RERA learning program covering compliance, documentation and practical consultation.",
+    hours: "55 Hours",
+    price: "₹5,999",
+    rating: 4.9,
+    language: "EN / HI",
+  },
+  {
+    id: 3,
+    title: "Real Estate Legal Essentials",
+    category: "Legal",
+    description:
+      "Understand essential legal concepts, RERA provisions and compliance requirements for real estate.",
+    hours: "32 Hours",
+    price: "₹2,999",
+    rating: 4.9,
+    language: "EN / HI",
+  },
+];

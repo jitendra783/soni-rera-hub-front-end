@@ -1,6 +1,6 @@
 import CourseCard from "../components/cards/CourseCard";
 import { courses } from "../data/courses";
-import "./Courses";
+import "./Courses.css";
 
 export default function Courses() {
   return (
@@ -39,12 +39,12 @@ export default function Courses() {
         </div>
 
         <div className="course-grid">
-          {courses.map((course, index) => (
-            <CourseCard
-              key={index}
-              course={course}
-            />
-          ))}
+          {courses.map((course) => (
+  <CourseCard
+    key={course.id}
+    course={course}
+  />
+))}
         </div>
       </section>
     </>

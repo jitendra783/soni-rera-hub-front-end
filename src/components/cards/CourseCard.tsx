@@ -8,17 +8,7 @@ import {
 import { Link } from "react-router-dom";
 
 import "./CourseCard.css";
-
-interface Course {
-  id?: number;
-  title: string;
-  description: string;
-  category: string;
-  price: number;
-  rating?: number;
-  duration?: string;
-  language?: string;
-}
+import type { Course } from "../../data/courses";
 
 interface CourseCardProps {
   course: Course;
@@ -50,10 +40,10 @@ export default function CourseCard({ course }: CourseCardProps) {
       {/* Meta */}
       <div className="course-meta">
 
-        {course.duration && (
+        {course.hours && (
           <span className="course-meta-item">
             <Clock size={15} />
-            {course.duration}
+            {course.hours}
           </span>
         )}
 
@@ -80,7 +70,7 @@ export default function CourseCard({ course }: CourseCardProps) {
       {/* Price */}
       <div className="course-price">
         <span className="course-price-value">
-          ₹{course.price.toLocaleString("en-IN")}
+          {course.price}
         </span>
 
         <span className="course-price-label">
@@ -90,7 +80,7 @@ export default function CourseCard({ course }: CourseCardProps) {
 
       {/* Button */}
       <Link
-        to={`/courses/${course.id ?? ""}`}
+        to={`/courses/${course.id}`}
         className="course-card-button"
       >
         View Course

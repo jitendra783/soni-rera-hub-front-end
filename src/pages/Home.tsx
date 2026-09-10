@@ -321,12 +321,12 @@ export default function Home() {
     </div>
 
     <div className="home-course-grid">
-      {courses.slice(0, 3).map((course, index) => (
-        <CourseCard
-          key={course.id ?? index}
-          course={course}
-        />
-      ))}
+      {courses.map((course) => (
+  <CourseCard
+    key={course.id}
+    course={course}
+  />
+))}
     </div>
 
   </div>
